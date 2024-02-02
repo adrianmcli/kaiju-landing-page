@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap);
+
+:root {
+  --primary-color: #fd52de; /* Pink */
+  --primary-glow: rgba(253, 82, 222, 0.5) 0 0 18px; /* Pink glow */
+}
+
+html {
+  font-family: "Source Code Pro", monospace;
+  color: white;
+  background: #202020;
+}
+
+.main-container {
+  background-color: #111;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper {
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  color: var(--primary-color);
+  text-shadow: var(--primary-glow);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  animation: pulseGlow 1.5s infinite alternate;
+}
+
+.subtitle {
+  margin: auto;
+  text-align: center;
+  letter-spacing: 1.5rem;
+  margin-left: 1.5rem;
+  font-family: "Space Mono", monospace;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+@keyframes pulseGlow {
+  from {
+    text-shadow: 0 0 12px var(--primary-color);
+  }
+  to {
+    text-shadow: 0 0 18px var(--primary-color);
+  }
+}
