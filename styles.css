@@ -11,7 +11,7 @@ html {
   background: #202020;
 }
 
-.main-container {
+.container {
   background-color: #111;
   height: 100vh;
   display: flex;
@@ -19,11 +19,11 @@ html {
   align-items: center;
 }
 
-.content-wrapper {
+.header {
   text-align: center;
 }
 
-.title {
+.logo-text-1 {
   margin: 0;
   color: var(--primary-color);
   text-shadow: var(--primary-glow);
@@ -32,7 +32,7 @@ html {
   animation: pulseGlow 1.5s infinite alternate;
 }
 
-.subtitle {
+.logo-text-2 {
   margin: auto;
   text-align: center;
   letter-spacing: 1.5rem;
@@ -49,4 +49,8 @@ html {
   to {
     text-shadow: 0 0 18px var(--primary-color);
   }
+}
+
+.tagline {
+  margin: 1.5rem;
 }
